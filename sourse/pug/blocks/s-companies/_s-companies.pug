@@ -1,0 +1,30 @@
+mixin s-companies()
+	// start s-companies
+	+b.s-companies.section.block-with-lazy&attributes(attributes) 
+		block
+		+e.slider-wrap
+			+e.slider--js.swiper-container
+				.swiper-wrapper
+					- for (var x = 0; x < 5; x++)
+						+e.slide.swiper-slide
+							+card()
+			+arrow()
+	// end s-companies
+mixin s-companies-2()
+	// start s-companies
+	+b.s-companies.section.block-with-lazy&attributes(attributes) 
+		block
+		
+		- for (var x = 0; x < 7; x++)
+			+card-horizontal() 
+		a.btn-more(href="#") Показать ещё
+	// end s-companies
+mixin s-companies-home()
+	// start s-companies
+	+b.s-companies.section.block-with-lazy&attributes(attributes) 
+		.container
+			.row
+				- for (var x = 0; x < 3; x++)
+					+e.col.col-lg-4.col-md-6
+						+card() 
+	// end s-companies

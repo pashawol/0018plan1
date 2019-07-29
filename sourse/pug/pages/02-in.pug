@@ -1,0 +1,53 @@
+extends layout/main.pug
+
+
+include ../blocks/s-content/_s-content.pug
+include ../blocks/s-contact/_s-contact.pug
+include ../blocks/aside/_aside.pug
+include ../blocks/s-catalog/_s-catalog.pug
+include ../blocks/s-companies/_s-companies.pug
+include ../blocks/s-logo/_s-logo.pug
+include ../blocks/s-rew/_s-rew.pug
+include ../blocks/s-catalog-inner/_s-catalog-inner.pug
+
+block title
+	title Внутренняя
+
+block pagecontent
+ 
+	+mob-mnu()
+	+header()
+		+top-line()
+		+top-nav()
+		.container
+			+breadcrumb("Москва", "Медицина")
+	//- +header-block()
+	+s-catalog-inner
+	+b.map-block
+		<script   async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A427a8610f82b016a80f54b13f4fd38d8f80ed00055a1b7882dcb55014941d0ab&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=false"></script>
+	.container
+		
+			.row
+				.col.order-xl-0.order-last
+					+aside
+				.col-xl-9
+					+s-companies-2()
+						+b.section-title
+							.h6.text-primary В городе Балашиха мы нашли:
+							ul
+								li Оптика – 17 адресов с номерами и телефонами;
+
+								li Воспользуйтесь картой и поиском для более тщательного отбора компаний;
+
+								li Честный рейтинг на основе 24 отзыва.
+					  
+				.col-12
+					//- +s-content()(class="border-bottom border-top")
+					+s-catalog-inner-2
+	//- +s-form()
+	//- +s-contact()
+	.section.text-center.container
+		img.res-i(src="img/@2x/Layer_22.png", alt="")
+
+	+footer()
+

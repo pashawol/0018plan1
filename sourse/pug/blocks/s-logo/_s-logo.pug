@@ -1,0 +1,15 @@
+mixin s-logo()
+	// start s-logo
+	+b.SECTION.s-logo.section.block-with-lazy#s-logo&attributes(attributes)
+		.container
+			+b.section-title.ttu
+				h2 Другие города 
+			.row
+				- for (var x = 0; x < 4; x++)
+					.col-xl-3.col-md-6
+						+e.item(href="#")
+							+e.img-wrap
+								+pic('',"gerb-sm","lazy","png")
+							+e.text  Подольск
+					// /.col-xl-3.col-md-6
+	// end s-logo

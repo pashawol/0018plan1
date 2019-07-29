@@ -1,0 +1,193 @@
+.footer {
+  background-color: #2a2b2c;
+  color: #ffffff;
+  padding-bottom: 20px;
+  // padding: 0;
+    background-image: url(https://cdn.plan1.ru/moscow/theme/img/footerbg.png);
+    clear: both;
+    z-index: 3000;
+    position: relative;
+    bottom: 0px;
+  #sitemap .h3 {
+    
+    color: #fefefe;
+    font-weight: noral;
+    margin-bottom: 0px;
+}
+font-size: 12px;
+#footer-bottom {
+  clear: both;
+  padding: 20px 0px 60px 0px;
+}
+
+#footer-bottom #footer-social img {
+  margin-left: 10px;
+  vertical-align: top;
+}
+
+.column{
+  @include media-breakpoint-up(xl) {
+
+    columns: 2;
+  }
+}
+&--home{
+  background-image: none;
+  p{
+
+    max-width: rem(460);
+  }
+}
+
+&__link{
+  color: #ffffff !important;
+  @extend .h6;
+  .icon{
+
+    font-size: 1rem;
+    margin-left: rem(10);
+  }
+}
+picture{
+  margin-right: 20px;
+}
+.footer-main{
+  margin-right: 20px;
+}
+// 
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(xs) {}
+
+
+// 
+@include media-breakpoint-between(md, xl) {}
+
+
+// 
+@include media-breakpoint-only(xs) {}
+
+@include media-breakpoint-only(sm) {}
+
+@include media-breakpoint-only(md) {}
+
+@include media-breakpoint-only(lg) {}
+
+@include media-breakpoint-only(xl) {}
+
+
+// 
+@include media-breakpoint-down(xl) {}
+
+@include media-breakpoint-down(lg) {}
+
+@include media-breakpoint-down(md) {}
+
+@include media-breakpoint-down(sm) {
+  .new-014-add-ent-foot-btn{
+    margin-bottom: 30px;
+    display: inline-block;
+  }
+}
+
+@include media-breakpoint-down(xs) {}
+p{
+  margin-bottom: 0;
+}
+ul{
+  list-style-type: none;
+}
+
+.new-014-add-ent-foot-btn {
+  font-size: 15px;
+  font-weight: bold;
+  color: #f8f8f8;
+  background: url(https://cdn.plan1.ru/img-014/but_footer.png) no-repeat 0px 2px;
+  padding: 0px 24px 8px 20px;
+  background-repeat: no-repeat;
+  margin-top: rem(30);
+}
+.new-014-add-ent-foot-btn:hover {
+  background: url(https://cdn.plan1.ru/img-014/but_footer.png) no-repeat 0px -29px;
+}
+}
+.foot-download-file a {
+  font-size: 13px!important;
+  color: #f70044!important;
+  text-decoration: underline!important;
+}
+#sitemap-link-holder {
+  height: 30px;
+  position: relative;
+  margin-top: rem(30);
+}
+
+// .footer #footer-wrapper{width:1000px;margin:0px auto 0px auto;}
+.footer #sitemap{clear:both;position:relative;}
+.footer #sitemap .h2{ color:#fefefe;font-weight:noral;margin-bottom:20px;}
+.footer #sitemap a{ color:#028ef1;font-weight:normal;text-decoration:none;}
+.footer #sitemap span{ color:#028ef1;font-weight:normal;text-decoration:none;}
+.footer #sitemap a:hover{color:#69a8d4;}
+.footer #sitemap span:hover{color:#69a8d4;}
+.footer #sitemap .column-one{max-width:212px;overflow-x:hidden;}
+.footer #sitemap .column-two{position:absolute;left:225px;top:41px;max-width:200px;overflow-x:hidden;}
+// .footer #sitemap #sitemap-org{f 
+// .footer #sitemap #sitemap-servis{ }
+// .footer #sitemap #sitemap-info{float:left;width:250px;min-height:200px;}
+.footer #sitemap #sitemap-info p{ color:#b6b6b6;}
+.footer #sitemap #sitemap-info a{ color:#b6b6b6;}
+.column-center-two{position:absolute;margin:-114px 0px 0px 178px;}
+.footer #footer-bottom{clear:both;padding:20px 0px 20px 0px;}
+.footer #footer-bottom #footer-copyright{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+@include media-breakpoint-up(md) {
+  .footer #footer-bottom #footer-logo{width:130px;float:left;}
+
+  .footer #footer-bottom #footer-copyright{width:400px;float:left;padding:2px 0 0 0;}
+  .footer #footer-bottom #footer-social{text-align:right;padding-top:18px;}
+}
+.footer #footer-bottom #footer-copyright p{ color:#b6b6b6;}
+.new-014-add-ent-foot-btn span {
+  visibility: hidden;
+}
+#new-footer-div{padding:6px 0px 0px 0px;}
+#new-footer-div span{color:#FFFFFF;font-size:14px;}
+#new-footer-div .sb-msk-phone-code{font-size:13px;}
+.nfd-v-line{padding:0px 7px;}
+
+.footer #sitemap #sitemap-info {
+  // width: 380px;
+}
+
+
+#sitemap-link-hide {
+  display: block;
+  position: absolute;
+  left: 50%;
+  margin: -30px 0 0 -65px;
+  width: 130px;
+  height: 60px;
+  font: 10px/16px 'Arial';
+  color: #888;
+  text-align: center;
+  text-decoration: none;
+}
+.show-sitemap-container #sitemap-link-hide {
+  background: url(https://cdn.plan1.ru/moscow/theme/img/footer-arrow-down.png) no-repeat center 30px;
+  padding: 7px 0 0 0;
+  height: 53px;
+}
+
+ #sitemap-link-hide.hide-sitemap-container {
+  background: url(https://cdn.plan1.ru/moscow/theme/img/footer-arrow-up.png) no-repeat center 12px;
+  padding: 45px 0 0 0;
+  height: 15px;
+}

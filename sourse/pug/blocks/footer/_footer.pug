@@ -1,0 +1,141 @@
+mixin footer()
+	+b.FOOTER.footer.block-with-lazy 
+		.container
+			#footer-wrapper
+				#sitemap-container.show-sitemap-container
+					#sitemap-link-holder
+						a#sitemap-link-hide(href='#') Свернуть карту сайта
+					#sitemap-hide
+
+						#sitemap
+							.row
+								.col-md
+									#sitemap-org
+										.h2 Организации в г. Можайском
+										ul.column(style='')
+										 
+											li
+												a(href='/mojaisk/krasota-i-ozdorovlenie/kriosauny/') Криосауны
+											li
+												a(href='/mojaisk/krasota-i-ozdorovlenie/avtorskie-metodiki-v-kosmetologii/') Авторские методики в косметологии
+											li
+												a(href='/mojaisk/meditsina/reproduktologi/') Репродуктологи
+											li
+												a(href='/mojaisk/stroitelstvo-i-remont/stavni-na-okna/') Ставни на окна
+											li
+												a(href='/mojaisk/uslugi/skladskie_yslugi/') Складские услуги
+											li
+												a(href='/mojaisk/krasota-i-ozdorovlenie/ehndermologiya/') Эндермология
+											li
+												a(href='/mojaisk/krasota-i-ozdorovlenie/saharnaya-depilyaciya/') Сахарная депиляция
+											li
+												a(href='/mojaisk/krasota-i-ozdorovlenie/toniziruyushchie-procedury/') Тонизирующие процедуры
+										
+											li
+												a(href='/mojaisk/avto/prokat-avto-bez-voditelya/') Прокат авто без водителя
+											li
+												a(href='/mojaisk/uslugi/mehovoe-atele/') Меховое ателье
+											li
+												a(href='/mojaisk/meditsina/medicinskie-sumki-dlya-instrumentov/') Медицинские сумки для инструментов
+											li
+												a(href='/mojaisk/obrazovanie/repetitor-po-angliiskomu/') Репетиторы по английскому
+											li
+												a(href='/mojaisk/meditsina/sosudistaya-hirurgiya/') Сосудистая хирургия
+											li
+												a(href='/mojaisk/yuridicheskie-uslugi-i-notariusyi/advokaty-po-vzyskaniyu-dolgov/') Адвокаты по взысканию долгов
+											li
+												a(href='/mojaisk/yuridicheskie-uslugi-i-notariusyi/sudebnaya-vlast/') Судебная власть
+											li
+												a(href='/mojaisk/meditsina/mammologicheskie-dispansery/') Маммологические диспансеры
+								.col-xl-3.col-md
+									#sitemap-servis 
+										.h2 Сервисы Plan1
+										 
+										ul.column
+											li
+												a(href='/mojaisk/ya_map/') Интерактивная карта города
+											li
+												a(href='/mojaisk/hotphone/') Экстренные службы
+											li
+												a(href='/mojaisk/realestate/') Недвижимость
+											li
+												a(href='/mojaisk/indexs/') Почтовые индексы
+											li
+												a(href='/mojaisk/raspisanie/') Расписание транспорта
+											li
+												a(href='/mojaisk/vacancy/') Вакансии 
+											li
+												a(href='/mojaisk/about/') О проекте
+											li
+												a(href='/mojaisk/price/') Реклама на сайте
+											li
+												a(href="#") Сообщить об ошибке
+											li
+												a(href='/mojaisk/contacts/') Контакты
+											li
+												a(href='http://m.plan1.ru') Мобильная версия
+											li
+												a(href='/reviews/') Отзывы о Plan1.ru
+											li
+												a(href='/karta_saita/') Карта сайта
+										div(style=' margin: 20px 0px 0px 0px;')
+											a#FormAddCompany.new-014-add-ent-foot-btn(href='#')
+												span Добавить организацию
+								.col-lg
+									#sitemap-info
+										.h3 Информация о городе
+										| 							Можа́йск — город в России, на западе Московской области, административный центр Можайского района и городского поселения Можайск. Носит звание города воинской славы (2012). Население — 30 413 чел. (2016). Занимает 50-е место по численности населения в Московской области. Город имеет прямоугольную сетку улиц, частично размеченных ещё в XVIII веке. Площадь города — 17,8 км2. 
+										.foot-download-file
+											a(  href='#', target='_blank') Скачать медиа-кит
+				#footer-bottom
+
+					#footer-logo(style='padding-top: 12px;')
+						a(href='/')
+							img(src='https://cdn.plan1.ru/moscow/theme/img/footerlogo.png', alt='Plan1.ru Электронный справочник', width='119', height='34')
+					#footer-copyright
+						p © 2005—2019 «plan1.ru» Все права принадлежат их владельцам.
+						p Использование материалов без согласия правообладателей запрещено.
+						#new-footer-div.row
+							.col-auto
+								+e.link.text-white(href="tel:(499)110-88-50") 
+									small (499) 
+									| 110-88-50
+									//- +icon("tel")
+
+							.col-auto 
+								+e.link.text-white(href="mailto:info@plan1.ru")  
+									| info@plan1.ru 
+									//- +icon("envelope")
+					#footer-social
+						img(src='https://cdn.plan1.ru/moscow/theme/img/vk.png', width='34', height='34', alt='Plan1.ru Электронный справочник')
+						img(src='https://cdn.plan1.ru/moscow/theme/img/fb.png', width='34', height='34', alt='Plan1.ru Электронный справочник')
+						img(src='https://cdn.plan1.ru/moscow/theme/img/od.png', width='34', height='34', alt='Plan1.ru Электронный справочник')
+						img(style='padding-top: 10px;', src='https://cdn.plan1.ru/moscow/theme/img/iloveplan1.png', alt='Plan1.ru Электронный справочник', width='141', height='50')
+						br
+mixin footer-home()
+	+b.FOOTER.footer--home.block-with-lazy 
+		.container 
+				#footer-bottom
+					
+					#footer-logo.footer-main(style='padding-top: 12px;')
+						a(href='/')
+							+pic("",'logo-foot',"lazy","png")
+					#footer-copyright
+						p Справочник организаций и&nbsp;крупнейшая база предприятий Московского региона, жёлтые страницы_ фирмы и&nbsp;учреждения
+						#new-footer-div.row
+							.col-auto
+								+e.link.text-white(href="tel:(499)110-88-50") 
+									small (499) 
+									| 110-88-50
+									+icon("tel")
+
+							.col-auto 
+								+e.link.text-white(href="mailto:info@plan1.ru")  
+									| info@plan1.ru 
+									+icon("envelope")
+					#footer-social
+						img(src='https://cdn.plan1.ru/moscow/theme/img/vk.png', width='34', height='34', alt='Plan1.ru Электронный справочник')
+						img(src='https://cdn.plan1.ru/moscow/theme/img/fb.png', width='34', height='34', alt='Plan1.ru Электронный справочник')
+						img(src='https://cdn.plan1.ru/moscow/theme/img/od.png', width='34', height='34', alt='Plan1.ru Электронный справочник')
+						img(style='padding-top: 10px;', src='https://cdn.plan1.ru/moscow/theme/img/iloveplan1.png', alt='Plan1.ru Электронный справочник', width='141', height='50')
+						br

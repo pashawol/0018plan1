@@ -1,0 +1,86 @@
+
+mixin cata-item(i,t)
+	+e.col.col-sm-6&attributes(attributes)
+		+b.catalog-item.dropdown.dropdown-toggle(data-toggle="dropdown"   )
+			//- data-display="static"
+			+e.DIV.icon-wrap
+				+icon('catalog-' + i)
+				//- img.res-i(src=`img/svg/catalog-${i}.svg`, alt="")
+			
+			+e.DIV.title= t
+			+e.dropdown-menu.dropdown-menu( )
+				+e.DIV.icon-wrap.bg-white
+					+icon('catalog-' + i)
+				+e.DIV.title.text-center= t
+				ul
+					each val, index in {"Аптеки ":"15","Больницы, поликлиники, центры ":"36","Детские медицинские учреждения ":"45","Мед. оборудование ":"13","Медицинская диагностика ":"26","Медицинские товары ":"78","Ортопедия, лечебный массаж ":"3","Сомнология ":"5","Стоматология ":"19"}
+						li
+							a(href="#")
+								.row
+									.col= index
+									.col-auto= val
+				+e.btn(href="#") Посмотреть все
+mixin s-catalog()
+	// start s-catalog
+	+b.s-catalog.section.block-with-lazy#s-catalog&attributes(attributes) 
+		+b.section-title.text-center
+			h1 Подольск справочник организаций 
+		.row
+			+cata-item("1","Медицина")(class="col-lg-3  col-md-4")
+			+cata-item("2","Юридические услуги и нотариусы")(class="col-lg-3  col-md-4")
+			+cata-item("3","Авто")(class="col-lg-3  col-md-4")
+			+cata-item("4","Досуг")(class="col-lg-3  col-md-4")
+			+cata-item("5","Услуги")(class="col-lg-3  col-md-4")
+			+cata-item("6","Городские службы")(class="col-lg-3  col-md-4")
+			+cata-item("7","Дети")(class="col-lg-3  col-md-4")
+			+cata-item("8","Строительство и ремонт")(class="col-lg-3  col-md-4")
+			+cata-item("9","Образование")(class="col-lg-3  col-md-4")
+			+cata-item("10","Банки")(class="col-lg-3  col-md-4")
+			+cata-item("11","СМИ, реклама")(class="col-lg-3  col-md-4")
+			+cata-item("12","Мебель")(class="col-lg-3  col-md-4")
+			+cata-item("13","Туризм")(class="col-lg-3  col-md-4")
+			+cata-item("14","Сотовая связь")(class="col-lg-3  col-md-4")
+			+cata-item("15","Животные")(class="col-lg-3  col-md-4")
+			+cata-item("16","Производство")(class="col-lg-3  col-md-4")
+			+cata-item("17","Религия и искусство")(class="col-lg-3  col-md-4")
+			+cata-item("18","Компьютеры")(class="col-lg-3  col-md-4")
+			+cata-item("19","Архитектура и дизайн")(class="col-lg-3  col-md-4")
+			+cata-item("20","Страхование")(class="col-lg-3  col-md-4")
+			+cata-item("21","Магазины")(class="col-lg-3  col-md-4")
+			+cata-item("22","Красота и оздоровление")(class="col-lg-3  col-md-4")
+			+cata-item("23","Недвижимость")(class="col-lg-3  col-md-4")
+			+cata-item("24","Спорт")(class="col-lg-3  col-md-4")
+			+cata-item("25","Общественные организации")(class="col-lg-3  col-md-4")
+
+	// end s-catalog
+mixin s-catalog-home()
+	// start s-catalog
+	+b.s-catalog.section.block-with-lazy#s-catalog&attributes(attributes)   
+		.row
+			+cata-item("1","Медицина")(class="col-home col-lg-3  col-md-4")
+			+cata-item("2","Юридические услуги и нотариусы")(class="col-home col-lg-3  col-md-4")
+			+cata-item("3","Авто")(class="col-home col-lg-3  col-md-4")
+			+cata-item("4","Досуг")(class="col-home col-lg-3  col-md-4")
+			+cata-item("5","Услуги")(class="col-home col-lg-3  col-md-4")
+			+cata-item("6","Городские службы")(class="col-home col-lg-3  col-md-4")
+			+cata-item("7","Дети")(class="col-home col-lg-3  col-md-4")
+			+cata-item("8","Строительство и ремонт")(class="col-home col-lg-3  col-md-4")
+			+cata-item("9","Образование")(class="col-home col-lg-3  col-md-4")
+			+cata-item("10","Банки")(class="col-home col-lg-3  col-md-4")
+			+cata-item("11","СМИ, реклама")(class="col-home col-lg-3  col-md-4")
+			+cata-item("12","Мебель")(class="col-home col-lg-3  col-md-4")
+			+cata-item("13","Туризм")(class="col-home col-lg-3  col-md-4")
+			+cata-item("14","Сотовая связь")(class="col-home col-lg-3  col-md-4")
+			+cata-item("15","Животные")(class="col-home col-lg-3  col-md-4")
+			+cata-item("16","Производство")(class="col-home col-lg-3  col-md-4")
+			+cata-item("17","Религия и искусство")(class="col-home col-lg-3  col-md-4")
+			+cata-item("18","Компьютеры")(class="col-home col-lg-3  col-md-4")
+			+cata-item("19","Архитектура и дизайн")(class="col-home col-lg-3  col-md-4")
+			+cata-item("20","Страхование")(class="col-home col-lg-3  col-md-4")
+			+cata-item("21","Магазины")(class="col-home col-lg-3  col-md-4")
+			+cata-item("22","Красота и оздоровление")(class="col-home col-lg-3  col-md-4")
+			+cata-item("23","Недвижимость")(class="col-home col-lg-3  col-md-4")
+			+cata-item("24","Спорт")(class="col-home col-lg-3  col-md-4")
+			+cata-item("25","Общественные организации")(class="col-home col-lg-3  col-md-4")
+
+	// end s-catalog

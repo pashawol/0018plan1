@@ -1,0 +1,32 @@
+extends layout/main.pug
+
+
+include ../blocks/s-content/_s-content.pug
+include ../blocks/s-contact/_s-contact.pug
+include ../blocks/aside/_aside.pug
+include ../blocks/s-catalog/_s-catalog.pug
+include ../blocks/s-companies/_s-companies.pug
+include ../blocks/s-news/_s-news.pug
+include ../blocks/s-cities/_s-cities.pug
+
+block title
+	title title
+
+block pagecontent
+ 
+	//- +mob-mnu()
+	+header()
+		+top-line-home()
+		//- +top-nav-home()
+	//- +header-block()
+	+pic("bg","head-bg","","jpg","960px","lazy")
+	.container
+		+s-catalog-home
+	+s-cities
+	+s-companies-home() 
+		.section-title.text-center
+			h2 50 САМЫХ ПРОСМАТРИВАЕМЫХ ОРГАНИЗАЦИЙ
+
+	+s-news
+	+footer-home()
+

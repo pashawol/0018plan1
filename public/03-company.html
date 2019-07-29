@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>title</title>
+    <meta name="description" content="о чем страница">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, shrink-to-fit=no">
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="shortcut icon" type="image/png" href="img/favicon/favicon.png">
+    <!-- Custom Browsers Color-->
+    <meta name="theme-color" content="#eb2142">
+    <link rel="stylesheet" href="libs/magnificPopup/magnific-popup.css">
+    <link rel="stylesheet" href="libs/swiper-4.2.0/swiper.min.css">
+    <link rel="stylesheet" href="css/main.min.css">
+  </head>
+  <body>
+    <div class="main-wrapper">
+      <div class="toggle-menu-mobile toggle-menu-mobile--js d-lg-none"><span></span>
+      </div>
+      <div class="menu-mobile menu-mobile--js d-lg-none">
+        <div class="toggle-menu-mobile toggle-menu-mobile--js"><span></span>
+        </div>
+        <div class="menu-mobile__inner">
+          <ul class="menu">
+            <li class="menu-item"><a href="#">
+                <svg class="icon icon-menu-1 "> 
+                  <use xlink:href="img/svg/sprite.svg#menu-1"></use>
+                </svg>Каталог</a></li>
+            <li class="menu-item"><a href="#">
+                <svg class="icon icon-menu-2 "> 
+                  <use xlink:href="img/svg/sprite.svg#menu-2"></use>
+                </svg>Расписание</a></li>
+            <li class="menu-item"><a href="#">
+                <svg class="icon icon-menu-3 "> 
+                  <use xlink:href="img/svg/sprite.svg#menu-3"></use>
+                </svg>Экстренные службы</a></li>
+            <li class="menu-item"><a href="#">
+                <svg class="icon icon-menu-4 "> 
+                  <use xlink:href="img/svg/sprite.svg#menu-4"></use>
+                </svg>Недвижимость</a></li>
+            <li class="menu-item"><a href="#">
+                <svg class="icon icon-menu-5 "> 
+                  <use xlink:href="img/svg/sprite.svg#menu-5"></use>
+                </svg>Индексы</a></li>
+          </ul>
+          <div class="text-right"></div>
+        </div>
+      </div>
+      <!--  мобильное меню-->
+      <!-- start HEADER.header-->
+      <header class="header block-with-lazy">
+        <!-- start .top-line-->
+        <div class="top-line block-with-lazy">
+          <div class="container">
+            <div class="banner"><img class="res-i" src="img/@2x/banner-gor.jpg" alt=""/>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="top-line__logo"><a href="#"><img src="img/@2x/header_logo.png" alt=""/></a>
+                </div>
+              </div>
+              <div class="col-auto">
+                <ul>
+                  <li><a href="#">Реклама на сайте </a></li>
+                  <li><a href="#">Оплата услуг </a></li>
+                  <li><a href="#">Карта Подольска</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="top-line__search-block">
+            <div class="container">
+              <div class="row">
+                <div class="top-line__col col-lg">
+                  <div class="row">
+                    <div class="top-line__label col-md-auto"> Что ищем?
+                    </div>
+                    <div class="col">
+                      <div class="search-form">
+                        <form>
+                          <input type="text"/>
+                          <button class="btn-dark" type="button">
+                            <svg class="icon icon-search "> 
+                              <use xlink:href="img/svg/sprite.svg#search"></use>
+                            </svg>
+                          </button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-auto">
+                  <div class="link-block link-block--city">
+                    <svg class="icon icon-mark "> 
+                      <use xlink:href="img/svg/sprite.svg#mark"></use>
+                    </svg>
+                    <div class="link-block__text"> Подольск
+                    </div>
+                  </div>
+                </div>
+                <div class="col-auto">
+                  <div class="link-block">
+                    <svg class="icon icon-flag "> 
+                      <use xlink:href="img/svg/sprite.svg#flag"></use>
+                    </svg>
+                    <div class="link-block__text">(0)
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-auto"><a class="top-line__btn" href="#">Добавить организацию</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end .top-line-->
+        <!-- start top-nav-->
+        <div class="top-nav block-with-lazy d-none d-lg-block">
+          <div class="container">
+            <ul class="menu">
+              <li class="menu-item"><a href="#">
+                  <svg class="icon icon-menu-1 "> 
+                    <use xlink:href="img/svg/sprite.svg#menu-1"></use>
+                  </svg>Каталог</a></li>
+              <li class="menu-item"><a href="#">
+                  <svg class="icon icon-menu-2 "> 
+                    <use xlink:href="img/svg/sprite.svg#menu-2"></use>
+                  </svg>Расписание</a></li>
+              <li class="menu-item"><a href="#">
+                  <svg class="icon icon-menu-3 "> 
+                    <use xlink:href="img/svg/sprite.svg#menu-3"></use>
+                  </svg>Экстренные службы</a></li>
+              <li class="menu-item"><a href="#">
+                  <svg class="icon icon-menu-4 "> 
+                    <use xlink:href="img/svg/sprite.svg#menu-4"></use>
+                  </svg>Недвижимость</a></li>
+              <li class="menu-item"><a href="#">
+                  <svg class="icon icon-menu-5 "> 
+                    <use xlink:href="img/svg/sprite.svg#menu-5"></use>
+                  </svg>Индексы</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- end top-nav-->
+      </header>
+      <!-- end HEADER.header-->
+      <div class="container">
+        <div class="row">
+          <div class="col order-xl-0 order-last">
+            <!-- start aside-->
+            <div class="aside section block-with-lazy" id="aside"> 
+              <div class="row">
+                <div class="aside__group col-xl-12 order-xl-0 order-first">
+                  <div class="h5 text-center ttu">ПОХОЖИЕ ОРГАНИЗАЦИИ</div>
+                  <div class="row">
+                    <div class="aside__col col-xl-12 col-lg-4 col-md-6">
+                      <div class="card-item"><a class="card-item__img-wrap" href="#">
+                        <!-- picture-->
+                        <picture> 
+                          <source srcset="img/@2x/webp/org.webp" type="image/webp"/>
+                          <!-- /webp images  --><img class="object-fit-js" src="img/@2x/org.jpg" alt=""/>
+                        </picture>
+                        <!-- /picture--></a>
+                        <div class="h6 ttu">IMPREZA</div>
+                        <div class="card-item__text small">Ресторан. Русская и европейская кухня. Бильярд. Проведение банкетов, свадеб, корпоративов. Элегантный интерьер, демократичные цены
+                        </div>
+                        <div class="card-item__foot">
+                          <div class="row">
+                            <div class="col-auto"><a class="active" href="#">
+                                <svg class="icon icon-mark "> 
+                                  <use xlink:href="img/svg/sprite.svg#mark"></use>
+                                </svg>на карте</a></div>
+                            <div class="col-auto"><a href="#">
+                                <svg class="icon icon-rew "> 
+                                  <use xlink:href="img/svg/sprite.svg#rew"></use>
+                                </svg>0 отзывов</a></div>
+                            <div class="col-auto"><a href="#">
+                                <svg class="icon icon-like "> 
+                                  <use xlink:href="img/svg/sprite.svg#like"></use>
+                                </svg>13</a></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="aside__col col-xl-12 col-lg-4 col-md-6">
+                      <div class="card-item"><a class="card-item__img-wrap" href="#">
+                        <!-- picture-->
+                        <picture> 
+                          <source srcset="img/@2x/webp/org.webp" type="image/webp"/>
+                          <!-- /webp images  --><img class="object-fit-js" src="img/@2x/org.jpg" alt=""/>
+                        </picture>
+                        <!-- /picture--></a>
+                        <div class="h6 ttu">IMPREZA</div>
+                        <div class="card-item__text small">Ресторан. Русская и европейская кухня. Бильярд. Проведение банкетов, свадеб, корпоративов. Элегантный интерьер, демократичные цены
+                        </div>
+                        <div class="card-item__foot">
+                          <div class="row">
+                            <div class="col-auto"><a class="active" href="#">
+                                <svg class="icon icon-mark "> 
+                                  <use xlink:href="img/svg/sprite.svg#mark"></use>
+                                </svg>на карте</a></div>
+                            <div class="col-auto"><a href="#">
+                                <svg class="icon icon-rew "> 
+                                  <use xlink:href="img/svg/sprite.svg#rew"></use>
+                                </svg>0 отзывов</a></div>
+                            <div class="col-auto"><a href="#">
+                                <svg class="icon icon-like "> 
+                                  <use xlink:href="img/svg/sprite.svg#like"></use>
+                                </svg>13</a></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="aside__col col-xl-12 col-lg-4 col-md-6">
+                      <div class="card-item"><a class="card-item__img-wrap" href="#">
+                        <!-- picture-->
+                        <picture> 
+                          <source srcset="img/@2x/webp/org.webp" type="image/webp"/>
+                          <!-- /webp images  --><img class="object-fit-js" src="img/@2x/org.jpg" alt=""/>
+                        </picture>
+                        <!-- /picture--></a>
+                        <div class="h6 ttu">IMPREZA</div>
+                        <div class="card-item__text small">Ресторан. Русская и европейская кухня. Бильярд. Проведение банкетов, свадеб, корпоративов. Элегантный интерьер, демократичные цены
+                        </div>
+                        <div class="card-item__foot">
+                          <div class="row">
+                            <div class="col-auto"><a class="active" href="#">
+                                <svg class="icon icon-mark "> 
+                                  <use xlink:href="img/svg/sprite.svg#mark"></use>
+                                </svg>на карте</a></div>
+                            <div class="col-auto"><a href="#">
+                                <svg class="icon icon-rew "> 
+                                  <use xlink:href="img/svg/sprite.svg#rew"></use>
+                                </svg>0 отзывов</a></div>
+                            <div class="col-auto"><a href="#">
+                                <svg class="icon icon-like "> 
+                                  <use xlink:href="img/svg/sprite.svg#like"></use>
+                                </svg>13</a></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end aside-->
+          </div>
+          <div class="col-xl-9">
+            <!-- start s-company-block-->
+            <section class="s-company-block section block-with-lazy" id="s-company-block">
+              <div class="container">
+                <div class="panel-block">
+                  <div class="s-company-block__label">
+                    <svg class="icon icon-flag-2 "> 
+                      <use xlink:href="img/svg/sprite.svg#flag-2"></use>
+                    </svg>
+                  </div>
+                  <div class="s-company-block__head border-bottom">
+                    <div class="row justify-content-sm-end">
+                      <div class="col-sm-auto">
+                        <div class="star-block">
+                          <svg class="icon icon-star " style="color:#fdb402;"> 
+                            <use xlink:href="img/svg/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="icon icon-star " style="color:#fdb402;"> 
+                            <use xlink:href="img/svg/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="icon icon-star " style="color:#fdb402;"> 
+                            <use xlink:href="img/svg/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="icon icon-star " style="color:#fdb402;"> 
+                            <use xlink:href="img/svg/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="icon icon-star " style="color:#fdb402;"> 
+                            <use xlink:href="img/svg/sprite.svg#star"></use>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="col-auto"><a href="#">
+                          <svg class="icon icon-rew "> 
+                            <use xlink:href="img/svg/sprite.svg#rew"></use>
+                          </svg>0 отзывов</a></div>
+                      <div class="col-auto"><a href="#">
+                          <svg class="icon icon-like "> 
+                            <use xlink:href="img/svg/sprite.svg#like"></use>
+                          </svg>13</a></div>
+                    </div>
+                  </div>
+                  <div class="s-company-block__body">
+                    <h1>Мечта на пос. Знамя Октября, мкрн. Родники, д. 3</h1>
+                    <p>Салон красоты. Парикмахерская: все виды парикмахерских услуг. SPA. Косметология. Массаж (все виды массажа). Ногтевой сервис (маникюр, педикюр). Перманентный макияж, наращивание ресниц, химическая завивка ресниц, пирсинг. Стрижка горячими ножницами. Кератиновое лечение волос, N-Gravity восстановление структуры волос. Солярий. </p>
+                    <p>Режим работы: Пн.-Вс. с 10:00 до 20:00.</p><br/>
+                    <div class="row">
+                      <div class="col">
+                            <div class="s-company-block__group row">
+                              <div class="col-auto"> 
+                                <svg class="icon icon-mark "> 
+                                  <use xlink:href="img/svg/sprite.svg#mark"></use>
+                                </svg>
+                              </div>
+                              <div class="col">г. Подольск, пос. Знамя Октября, мкрн. Родники, д. 3
+                              </div>
+                            </div>
+                            <div class="s-company-block__group row">
+                              <div class="col-auto"> 
+                                <svg class="icon icon-tel "> 
+                                  <use xlink:href="img/svg/sprite.svg#tel"></use>
+                                </svg>
+                              </div>
+                              <div class="col"><a class="text-body" href="tel:(496)345-16-57">(496) 345-16-57</a><br/><a class="text-body" href="tel:(496)345-67-91"> (496) 345-67-91</a>
+                              </div>
+                            </div>
+                            <div class="s-company-block__group row">
+                              <div class="col-auto"> 
+                                <svg class="icon icon-envelope "> 
+                                  <use xlink:href="img/svg/sprite.svg#envelope"></use>
+                                </svg>
+                              </div>
+                              <div class="col"><a class="text-body" href="maito:info@info.ru">info@info.ru</a>
+                              </div>
+                            </div>
+                            <div class="s-company-block__group row">
+                              <div class="col-auto"> 
+                                <svg class="icon icon-web "> 
+                                  <use xlink:href="img/svg/sprite.svg#web"></use>
+                                </svg>
+                              </div>
+                              <div class="col"><a class="text-link tdu" href="http://www.arb6.ru">http://www.arb6.ru</a>
+                              </div>
+                            </div>
+                      </div>
+                      <div class="col-sm-auto text-lg-right">
+                        <div class="s-company-block__share-block">
+                          <p>Поделиться:</p><script src="https://yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
+<script src="https://yastatic.net/share2/share.js"></script>
+<div class="ya-share2" data-services="vkontakte,facebook,odnoklassniki,moimir,twitter"></div>
+                        </div>
+                        <div class="s-company-block__state"><a class="text-body tdu" href="#">
+                            <svg class="icon icon-statistics "> 
+                              <use xlink:href="img/svg/sprite.svg#statistics"></use>
+                            </svg>Статистика</a>
+                        </div>
+                        <div><a class="text-link tdu" href="#">Сообщить об ошибке</a></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="s-company-block__map-block"><script   async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A427a8610f82b016a80f54b13f4fd38d8f80ed00055a1b7882dcb55014941d0ab&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=false"></script><a class="map-link tdu" href="#">
+                      <svg class="icon icon-mark "> 
+                        <use xlink:href="img/svg/sprite.svg#mark"></use>
+                      </svg>Посмотреть на карте plan1</a>
+                  </div>
+                  <div class="s-company-block__rew-block border-top">
+                    <div class="s-company-block__head pr-0">
+                      <div class="row">
+                        <div class="col-sm">
+                          <div class="h2">Отзывы о компании</div>
+                        </div>
+                        <div class="col-sm-auto">
+                          <div class="star-block">
+                            <svg class="icon icon-star " style="color:#fdb402;"> 
+                              <use xlink:href="img/svg/sprite.svg#star"></use>
+                            </svg>
+                            <svg class="icon icon-star " style="color:#fdb402;"> 
+                              <use xlink:href="img/svg/sprite.svg#star"></use>
+                            </svg>
+                            <svg class="icon icon-star " style="color:#fdb402;"> 
+                              <use xlink:href="img/svg/sprite.svg#star"></use>
+                            </svg>
+                            <svg class="icon icon-star " style="color:#fdb402;"> 
+                              <use xlink:href="img/svg/sprite.svg#star"></use>
+                            </svg>
+                            <svg class="icon icon-star " style="color:#fdb402;"> 
+                              <use xlink:href="img/svg/sprite.svg#star"></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="col-auto"><a href="#">
+                            <svg class="icon icon-rew "> 
+                              <use xlink:href="img/svg/sprite.svg#rew"></use>
+                            </svg>0 отзывов</a></div>
+                        <div class="col-auto"><a href="#">
+                            <svg class="icon icon-like "> 
+                              <use xlink:href="img/svg/sprite.svg#like"></use>
+                            </svg>13</a></div>
+                      </div>
+                    </div>
+                    <div class="s-company-block__rew-item border-bottom">
+                      <div class="row mb-2">
+                        <div class="col strong"> Юлия</div>
+                        <div class="col-sm-auto strong">04 сентября 2018</div>
+                      </div>
+                      <p> Парафинотерапия способствует выводу токсинов на поверхность кожи, улучшению работы двигательных суставов, восстан6овлению тканей и быстрому заживлению мелких ранок и ссадин, особенно травмированной кутикулы.</p>
+                    </div>
+                    <div class="s-company-block__rew-item border-bottom">
+                      <div class="row mb-2">
+                        <div class="col strong"> Юлия</div>
+                        <div class="col-sm-auto strong">04 сентября 2018</div>
+                      </div>
+                      <p> Парафинотерапия способствует выводу токсинов на поверхность кожи, улучшению работы двигательных суставов, восстан6овлению тканей и быстрому заживлению мелких ранок и ссадин, особенно травмированной кутикулы.</p>
+                    </div>
+                  </div>
+                  <div class="form-wrap">
+                    <div class="h2">Оставить озыв</div><br/>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-wrap__input-wrap"><input class="form-wrap__input" type="text" placeholder="Ваше имя" name="text"/>
+                        </div>
+                        <!-- +e.input-wrap-->
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-wrap__input-wrap"><input class="form-wrap__input" type="email" placeholder="e-mail" name="email"/>
+                        </div>
+                        <!-- +e.input-wrap-->
+                      </div>
+                    </div>
+                    <div class="like-block">
+                      <div class="like-block__title"> Тип отзыва:
+                      </div>
+                      <label class="btn-like btn-like--up">
+                        <input type="radio" name="like"/><span class="btn-like__inner">
+                        <svg class="icon icon-thumbs-up "> 
+                          <use xlink:href="img/svg/sprite.svg#thumbs-up"></use>
+                        </svg></span>
+                      </label>
+                      <label class="btn-like btn-like--in">
+                        <input type="radio" name="like"/><span class="btn-like__inner">
+                        <svg class="icon icon-thumbs-down "> 
+                          <use xlink:href="img/svg/sprite.svg#thumbs-down"></use>
+                        </svg></span>
+                      </label>
+                    </div>
+                    <div class="form-wrap__input-wrap"><textarea class="form-wrap__input form-control" placeholder="" name="textarea"></textarea>
+                    </div>
+                    <!-- +e.input-wrap-->
+                    <div class="row">
+                      <div class="col mb-4">
+                        <div class="add-file">
+                          <label>
+                            <svg class="icon icon-file "> 
+                              <use xlink:href="img/svg/sprite.svg#file"></use>
+                            </svg><input class="add-file__input" name="file" type="file"/><span class="add-file__btn"> </span><span class="add-file__text">  Прикрепить резюме</span>
+                          </label><span class="add-file__filename"> </span>
+                        </div>
+                      </div>
+                      <div class="col-auto mb-4"><a class="tdu" href="#">Правила размещения отзывов на сайте plan1.ru</a></div>
+                    </div>
+                    <button class="form-wrap__btn" type="button">Отправить отзыв
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- end s-company-block-->
+          </div>
+        </div>
+      </div>
+      <footer class="footer block-with-lazy"> 
+        <div class="container">
+          <div id="footer-wrapper">
+            <div class="show-sitemap-container" id="sitemap-container">
+              <div id="sitemap-link-holder"><a id="sitemap-link-hide" href="#">Свернуть карту сайта</a></div>
+              <div id="sitemap-hide">
+                <div id="sitemap">
+                  <div class="row">
+                    <div class="col-md">
+                      <div id="sitemap-org">
+                        <div class="h2">Организации в г. Можайском</div>
+                        <ul class="column">
+                          <li><a href="/mojaisk/krasota-i-ozdorovlenie/kriosauny/">Криосауны</a></li>
+                          <li><a href="/mojaisk/krasota-i-ozdorovlenie/avtorskie-metodiki-v-kosmetologii/">Авторские методики в косметологии</a></li>
+                          <li><a href="/mojaisk/meditsina/reproduktologi/">Репродуктологи</a></li>
+                          <li><a href="/mojaisk/stroitelstvo-i-remont/stavni-na-okna/">Ставни на окна</a></li>
+                          <li><a href="/mojaisk/uslugi/skladskie_yslugi/">Складские услуги</a></li>
+                          <li><a href="/mojaisk/krasota-i-ozdorovlenie/ehndermologiya/">Эндермология</a></li>
+                          <li><a href="/mojaisk/krasota-i-ozdorovlenie/saharnaya-depilyaciya/">Сахарная депиляция</a></li>
+                          <li><a href="/mojaisk/krasota-i-ozdorovlenie/toniziruyushchie-procedury/">Тонизирующие процедуры</a></li>
+                          <li><a href="/mojaisk/avto/prokat-avto-bez-voditelya/">Прокат авто без водителя</a></li>
+                          <li><a href="/mojaisk/uslugi/mehovoe-atele/">Меховое ателье</a></li>
+                          <li><a href="/mojaisk/meditsina/medicinskie-sumki-dlya-instrumentov/">Медицинские сумки для инструментов</a></li>
+                          <li><a href="/mojaisk/obrazovanie/repetitor-po-angliiskomu/">Репетиторы по английскому</a></li>
+                          <li><a href="/mojaisk/meditsina/sosudistaya-hirurgiya/">Сосудистая хирургия</a></li>
+                          <li><a href="/mojaisk/yuridicheskie-uslugi-i-notariusyi/advokaty-po-vzyskaniyu-dolgov/">Адвокаты по взысканию долгов</a></li>
+                          <li><a href="/mojaisk/yuridicheskie-uslugi-i-notariusyi/sudebnaya-vlast/">Судебная власть</a></li>
+                          <li><a href="/mojaisk/meditsina/mammologicheskie-dispansery/">Маммологические диспансеры</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-xl-3 col-md">
+                      <div id="sitemap-servis"> 
+                        <div class="h2">Сервисы Plan1</div>
+                        <ul class="column">
+                          <li><a href="/mojaisk/ya_map/">Интерактивная карта города</a></li>
+                          <li><a href="/mojaisk/hotphone/">Экстренные службы</a></li>
+                          <li><a href="/mojaisk/realestate/">Недвижимость</a></li>
+                          <li><a href="/mojaisk/indexs/">Почтовые индексы</a></li>
+                          <li><a href="/mojaisk/raspisanie/">Расписание транспорта</a></li>
+                          <li><a href="/mojaisk/vacancy/">Вакансии </a></li>
+                          <li><a href="/mojaisk/about/">О проекте</a></li>
+                          <li><a href="/mojaisk/price/">Реклама на сайте</a></li>
+                          <li><a href="#">Сообщить об ошибке</a></li>
+                          <li><a href="/mojaisk/contacts/">Контакты</a></li>
+                          <li><a href="http://m.plan1.ru">Мобильная версия</a></li>
+                          <li><a href="/reviews/">Отзывы о Plan1.ru</a></li>
+                          <li><a href="/karta_saita/">Карта сайта</a></li>
+                        </ul>
+                        <div style=" margin: 20px 0px 0px 0px;"><a class="new-014-add-ent-foot-btn" id="FormAddCompany" href="#"><span>Добавить организацию</span></a></div>
+                      </div>
+                    </div>
+                    <div class="col-lg">
+                      <div id="sitemap-info">
+                        <div class="h3">Информация о городе</div>							Можа́йск — город в России, на западе Московской области, административный центр Можайского района и городского поселения Можайск. Носит звание города воинской славы (2012). Население — 30 413 чел. (2016). Занимает 50-е место по численности населения в Московской области. Город имеет прямоугольную сетку улиц, частично размеченных ещё в XVIII веке. Площадь города — 17,8 км2. 
+                        <div class="foot-download-file"><a href="#" target="_blank">Скачать медиа-кит</a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="footer-bottom">
+              <div id="footer-logo" style="padding-top: 12px;"><a href="/"><img src="https://cdn.plan1.ru/moscow/theme/img/footerlogo.png" alt="Plan1.ru Электронный справочник" width="119" height="34"/></a></div>
+              <div id="footer-copyright">
+                <p>© 2005—2019 «plan1.ru» Все права принадлежат их владельцам.</p>
+                <p>Использование материалов без согласия правообладателей запрещено.</p>
+                <div class="row" id="new-footer-div">
+                  <div class="col-auto"><a class="footer__link text-white" href="tel:(499)110-88-50"> <small>(499) </small>110-88-50</a>
+                  </div>
+                  <div class="col-auto"> <a class="footer__link text-white" href="mailto:info@plan1.ru">
+                     info@plan1.ru </a>
+                  </div>
+                </div>
+              </div>
+              <div id="footer-social"><img src="https://cdn.plan1.ru/moscow/theme/img/vk.png" width="34" height="34" alt="Plan1.ru Электронный справочник"/><img src="https://cdn.plan1.ru/moscow/theme/img/fb.png" width="34" height="34" alt="Plan1.ru Электронный справочник"/><img src="https://cdn.plan1.ru/moscow/theme/img/od.png" width="34" height="34" alt="Plan1.ru Электронный справочник"/><img style="padding-top: 10px;" src="https://cdn.plan1.ru/moscow/theme/img/iloveplan1.png" alt="Plan1.ru Электронный справочник" width="141" height="50"/><br/></div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="js/lazy.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="libs/popper.min.js"></script>
+    <script src="libs/bootstrap/util.js"></script>
+    <script src="libs/bootstrap/dropdown.js"></script>
+    <script src="libs/bootstrap/tooltip.js"></script>
+    <!-- полифил для picture-->
+    <script src="libs/picturefill.min.js"></script>
+    <!-- полифил для object-fit-->
+    <script src="libs/object-fit-images/dist/ofi.min.js"></script>
+    <!-- modal libs-->
+    <script src="libs/magnificPopup/jquery.magnific-popup.min.js"></script>
+    <!-- modal libs-->
+    <!-- slider libs-->
+    <script src="libs/swiper-4.2.0/swiper.min.js"></script>
+    <!-- /slider libs-->
+    <!-- for svg libs-->
+    <script src="libs/svg4everybody-master/svg4everybody.min.js"></script>
+    <!-- /for svg libs-->
+    <script src="libs/jquery.touchSwipe.min.js"></script>
+    <script src="libs/jquery.inputmask.bundle.min.js"></script>
+    <script src="js/common.js"></script>
+  </body>
+</html>

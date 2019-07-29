@@ -1,0 +1,171 @@
+.s-company-block {
+
+
+	&__label {
+		top: rem(-2);
+		right: rem(20);
+		position: absolute;
+
+		.icon {
+
+			font-size: rem(58);
+		}
+
+		&::before {
+			content: '+';
+			@include a-cent;
+			color: #ffffff;
+			opacity: 0.8;
+			font-size: rem(24);
+			margin-left: rem(-1);
+			margin-top: rem(-5);
+		}
+	}
+
+	&__head {
+		padding-right: rem(50);
+		@include media-breakpoint-up(sm) {
+			padding-bottom: 0;
+		}
+		padding-bottom: rem(10);
+
+		a {
+			display: flex;
+			align-items: center;
+			color: $body-color;
+			font-weight: bold;
+			.icon {
+				font-size: rem(24);
+				margin-right: rem(4);
+			}
+
+			&:hover,
+			&.active {
+				text-decoration: none;
+				color: $primary;
+			}
+		}
+
+		.row {
+			// justify-content: space-between;
+			// justify-content: flex-end;
+			@include roww(10);
+		}
+		.star-block{
+			margin-bottom: rem(20);
+		}
+	}
+	h1{
+		color: $primary;
+		@extend .h2;
+	}
+
+	&__body{
+		padding-top: 1rem;
+	}
+
+	&__group{
+		margin-bottom: rem(20);
+
+		@include roww(7);
+		a{
+			font-size: 1rem;
+
+		}
+		.icon{
+			color: $primary;
+			font-size: rem(20);
+		}
+	}
+	&__share-block{
+		padding-bottom: rem(50);
+	}
+	&__state{
+		a{
+			display: inline-flex;
+			padding-bottom: rem(30);
+			.icon{
+				font-size: rem(24);
+				margin-right: rem(10);
+			}
+		}
+	}
+
+	&__map-block{
+		position: relative;
+		margin-top: rem(20);
+	height: rem(175px);
+		>*{
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100% !important;
+			height: 100% !important;
+	
+		}
+		> .map-link{
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			// width: 100%;
+			height: auto !important;
+			top: auto;
+			text-align: center;
+			color: #ffffff;
+			z-index: 10;
+			height: auto;
+			background-color: rgba($color: #000000, $alpha: .6);
+			padding: rem(5);
+			.icon{
+				font-size: 1.2rem;
+				margin-right: rem(10);
+			}
+		}
+	}
+
+	&__rew-block{
+		margin-top: rem(20);
+		padding-top: rem(20);
+	}
+
+	&__rew-item{
+		margin-bottom: rem(20);
+	}
+
+	@include media-breakpoint-up(xl) {}
+
+	@include media-breakpoint-up(lg) {}
+
+	@include media-breakpoint-up(md) {}
+
+	@include media-breakpoint-up(sm) {}
+
+	@include media-breakpoint-up(xs) {}
+
+	//
+	@include media-breakpoint-between(md, xl) {}
+
+
+	//
+	@include media-breakpoint-only(xs) {}
+
+	@include media-breakpoint-only(sm) {}
+
+	@include media-breakpoint-only(md) {}
+
+	@include media-breakpoint-only(lg) {}
+
+	@include media-breakpoint-only(xl) {}
+
+	//
+	@include media-breakpoint-down(xl) {}
+
+	@include media-breakpoint-down(lg) {}
+
+	@include media-breakpoint-down(md) {}
+
+	@include media-breakpoint-down(sm) {}
+
+	@include media-breakpoint-down(xs) {}
+
+}

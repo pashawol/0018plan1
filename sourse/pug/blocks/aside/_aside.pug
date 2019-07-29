@@ -1,0 +1,63 @@
+mixin aside()
+	// start aside
+	+b.aside.section.block-with-lazy#aside&attributes(attributes) 
+		.row
+			mixin gruop()
+				+e.group.col-xl-12.col-lg-4.col-md-6&attributes(attributes)
+					block
+			+gruop()
+				+e.panel
+					+e.banner
+						img.res-i(src="img/@2x/banner-1.jpg", alt="")
+					+e.banner
+						img.res-i(src="img/@2x/banner-2.jpg", alt="")
+					+e.banner
+						img.res-i(src="img/@2x/banner-3.jpg", alt="")
+			+gruop
+				+e.panel
+					.h5.text-center.ttu Подольск Местные новости 21.06.2019
+					ul
+						li
+							a(href="#") В Подмосковье отремонтировали более 280 дорог по итогам голосования на «Доброделе» 
+						li
+							a(href="#") Цветы возложили к памятникам в Подольске накануне Дня памяти и скорби Задержанный в Подольске похититель пионов рассказал, что рвал их для возлюбленной 
+						li
+							a(href="#") Воспитанника спортшколы Подольска взяли в сборную России по волейболу для игр в Лиге наций 
+						li
+							a(href="#") Более 90 тысяч человек посетили демонстрационный павильон МЦД в Москве за полгода
+					a.btn.btn-primary.btn-block(href="#") Все новости
+			+gruop(class="order-xl-last")
+				+e.panel
+					+e.banner
+						img.res-i(src="img/@2x/banner-4.jpg", alt="")
+				
+				+e.panel
+					+e.banner
+						img.res-i(src="img/@2x/banner-5.jpg", alt="")
+			+e.group.col-xl-12(class="order-xl-0 order-first")
+				.h5.text-center.ttu ОБНОВЛЕНИЯ ОРГАНИЗАЦИЙ
+				.row
+					- for (var x = 0; x < 3; x++)
+						+e.col.col-xl-12.col-lg-4.col-md-6
+							+card()
+					
+	// end aside
+
+
+mixin aside-3()
+	// start aside
+	+b.aside.section.block-with-lazy#aside&attributes(attributes) 
+		.row
+			mixin gruop()
+				+e.group.col-xl-12.col-lg-4.col-md-6&attributes(attributes)
+					block 
+			+e.group.col-xl-12(class="order-xl-0 order-first")
+				.h5.text-center.ttu ПОХОЖИЕ ОРГАНИЗАЦИИ
+				.row
+					- for (var x = 0; x < 3; x++)
+						+e.col.col-xl-12.col-lg-4.col-md-6
+							+card()
+					
+	// end aside
+
+

@@ -1,0 +1,36 @@
+mixin item(t,n)
+	+e.col.col-xl-3.col-lg-4.col-sm-6
+		+e.item(href="#")&attributes(attributes)
+			+e.title= t
+			+e.counter= n
+	// /+e.col.col-xl-3.col-lg-4.col-sm-6
+mixin s-catalog-inner()
+	// start s-catalog-inner
+	+b.s-catalog-inner.bg-white.section.block-with-lazy&attributes(attributes)
+		.container
+			+b.section-title.text-center
+				.row
+					.col-auto
+						+e.icon-wrap
+							+icon('catalog-1')
+					.col
+						+e.title Медицина Москвы 
+							|
+							span.text-primary (8311 организаций) 
+			.row
+				each  index, val in {'Аптеки':"173",'Больницы, поликлиники, центры':'1452','Детские медицинские учреждения':'834','Мед. оборудование':'173','Медицинская диагностика':'42','Медицинские товары':'1452','Оптика':'834','Ортопедия, лечебный массаж':'173','Отоларингология':'234','Психология  и психотерапия':'1452','Сомнология':'645','Стоматология':'173','Стоматолгия':'23','Терапия':'173','Хирургия':'65','Центры реабилитации':'834','Стоматология':'173'}
+					+item(val, index)
+	// end s-catalog-inner
+
+	
+mixin s-catalog-inner-2()
+	// start s-catalog-inner
+	+b.s-catalog-inner.section.block-with-lazy&attributes(attributes)
+		.container
+			+b.section-title
+				h2 Другие города
+			.row 
+				each  index, val in {'Терапия':"173",'Хирургия':'1452','Сомнология':'334','Стоматология':'173'}
+					+item(val, index)(class="s-catalog-inner__item--white")
+	// end s-catalog-inner
+

@@ -1,0 +1,19 @@
+mixin s-news()
+	// start s-news
+	+b.SECTION.s-news.section.bg-white&attributes(attributes)
+		.container
+			+b.section-title.text-center
+				h2 50 САМЫХ ПРОСМАТРИВАЕМЫХ ОРГАНИЗАЦИЙ
+				
+			.row
+				- for (var x = 0; x < 3; x++)
+					+e.col.col-lg-4.col-md-6
+						+e.item 
+							.h2 
+								a.text-body(href="#") Заголовок новости
+							p Ресторан. Русская и европейская кухня. Бильярд. Проведение банкетов, свадеб, корпоративов. Элегантный интерьер, демократичные цены
+							a(href="#").tdu Подробнее...
+							+e.footer.border-top 13.01.19
+					// /+e.col.col-lg-4.col-md-6
+			a.btn-more(href="#") Посмотреть все
+	// end s-news

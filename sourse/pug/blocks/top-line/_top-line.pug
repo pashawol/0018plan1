@@ -1,0 +1,76 @@
+mixin top-line()
+	// start .top-line
+	+b.top-line.block-with-lazy
+		.container
+			+b.banner
+				img.res-i(src="img/@2x/banner-gor.jpg", alt="")
+			.row
+				.col
+					+e.logo
+						a(href="#")
+							img(src="img/@2x/header_logo.png", alt="")
+				.col-auto
+					ul
+						li
+							a(href="#") Реклама на сайте 
+						li
+							a(href="#") Оплата услуг 
+						li
+							a(href="#") Карта Подольска
+		+e.search-block
+			.container
+				.row
+					+e.col.col-lg
+						.row
+							+e.label.col-md-auto  Что ищем?
+							.col
+								+search-form()(class="btn-dark")
+					.col-auto
+						+b.link-block--city
+							+icon("mark")
+							+e.text  Подольск
+					
+					.col-auto
+						+b.link-block
+							+icon("flag")
+							+e.text (0)
+					.col-sm-auto
+						+e.btn(href="#") Добавить организацию
+	// end .top-line
+
+mixin top-line-home()
+	// start .top-line
+	+b.top-line.block-with-lazy
+		+e.rad-head.bg-primary.text-white
+			.container
+				.row
+					.col-lg
+						p Справочник организаций и&nbsp;крупнейшая база предприятий Московского региона, жёлтые страницы_ фирмы и&nbsp;учреждения
+					.col-auto
+						+e.link.text-white(href="tel:(499)110-88-50") 
+							small (499) 
+							| 110-88-50
+							+icon("tel")
+
+					.col-auto 
+						+e.link.text-white(href="mailto:info@plan1.ru")  
+							| info@plan1.ru 
+							+icon("envelope")
+		+e.body
+			.container 
+				.row
+					.col-lg-auto.col.mb-3
+						+e.logo
+							a(href="#")
+								img(src="img/@2x/header_logo.png", alt="")
+					.col-auto.order-lg-last.mb-3
+						+b.link-block--city.text-body
+							+icon("mark")(class="text-primary")
+							+e.text Москва
+					+e.col.col-lg.mb-3
+						.row
+							+e.label.col-md-auto  Что ищем?
+							.col
+								+search-form()(class="btn-primary")
+	// end .top-line
+

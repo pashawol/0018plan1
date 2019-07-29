@@ -1,0 +1,30 @@
+extends layout/main.pug
+
+
+include ../blocks/s-content/_s-content.pug
+include ../blocks/s-contact/_s-contact.pug
+include ../blocks/aside/_aside.pug
+include ../blocks/s-catalog/_s-catalog.pug
+include ../blocks/s-company-block/_s-company-block.pug
+
+block title
+	title title
+
+block pagecontent
+ 
+	+mob-mnu()
+	+header()
+		+top-line()
+		+top-nav()
+	//- +header-block()
+	.container
+		
+			.row
+				.col.order-xl-0.order-last
+					+aside-3
+				.col-xl-9
+					+s-company-block
+	//- +s-form()
+	//- +s-contact()
+	+footer()
+

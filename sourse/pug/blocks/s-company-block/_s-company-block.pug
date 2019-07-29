@@ -1,0 +1,112 @@
+mixin s-company-block()
+	mixin star-block()
+		.col-sm-auto
+			+b.star-block
+				+icon("star")(style="color:#fdb402")
+				+icon("star")(style="color:#fdb402")
+				+icon("star")(style="color:#fdb402")
+				+icon("star")(style="color:#fdb402")
+				+icon("star")(style="color:#fdb402")
+		.col-auto
+			a(href="#")
+					+icon("rew")
+					| 0 отзывов
+		.col-auto
+			a(href="#")
+					+icon("like")
+					| 13
+	// start s-company-block
+	+b.SECTION.s-company-block.section.block-with-lazy#s-company-block&attributes(attributes)
+		.container
+			.panel-block
+				+e.label
+					+icon('flag-2')
+				+e.head.border-bottom
+					.row.justify-content-sm-end
+						+star-block()
+				+e.body
+					h1 Мечта на пос. Знамя Октября, мкрн. Родники, д. 3
+					p Салон красоты. Парикмахерская: все виды парикмахерских услуг. SPA. Косметология. Массаж (все виды массажа). Ногтевой сервис (маникюр, педикюр). Перманентный макияж, наращивание ресниц, химическая завивка ресниц, пирсинг. Стрижка горячими ножницами. Кератиновое лечение волос, N-Gravity восстановление структуры волос. Солярий. 
+
+					p Режим работы: Пн.-Вс. с 10:00 до 20:00.
+					br
+					.row
+						.col
+							mixin gr(l)
+								+e.group.row
+									.col-auto 
+										+icon(l)
+									.col
+										block
+							+gr('mark')
+								| г. Подольск, пос. Знамя Октября, мкрн. Родники, д. 3
+							+gr('tel')
+								a.text-body(href="tel:(496)345-16-57") (496) 345-16-57
+								br
+
+								a.text-body(href="tel:(496)345-67-91")  (496) 345-67-91
+							+gr('envelope')
+								a.text-body(href="maito:info@info.ru") info@info.ru
+							+gr('web')
+								a.text-link.tdu(href="http://www.arb6.ru") http://www.arb6.ru
+			
+						.col-sm-auto.text-lg-right
+							+e.share-block
+								p Поделиться:
+								<script src="https://yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
+								<script src="https://yastatic.net/share2/share.js"></script>
+								<div class="ya-share2" data-services="vkontakte,facebook,odnoklassniki,moimir,twitter"></div>
+							+e.state
+								a.text-body.tdu(href="#")
+									+icon('statistics')
+									| Статистика
+							div
+								a.text-link.tdu(href="#") Сообщить об ошибке
+				+e.map-block
+					<script   async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A427a8610f82b016a80f54b13f4fd38d8f80ed00055a1b7882dcb55014941d0ab&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=false"></script>
+					a.map-link.tdu(href="#")
+						+icon("mark")
+						| Посмотреть на карте plan1
+				+e.rew-block.border-top
+					+e.head.pr-0
+						.row
+							.col-sm
+								.h2 Отзывы о компании
+							+star-block()
+					- for (var x = 0; x < 2; x++)
+						+e.rew-item.border-bottom
+							.row.mb-2
+								.col.strong  Юлия
+								.col-sm-auto.strong 04 сентября 2018
+							p  Парафинотерапия способствует выводу токсинов на поверхность кожи, улучшению работы двигательных суставов, восстан6овлению тканей и быстрому заживлению мелких ранок и ссадин, особенно травмированной кутикулы.
+				+b.form-wrap
+					.h2 Оставить озыв
+					br
+					
+					.row
+						.col-md-6
+							+input("Ваше имя")
+						
+						.col-md-6
+							+input("e-mail","email")
+					+b.like-block
+						+e.title  Тип отзыва:
+						+b.LABEL.btn-like--up()
+							input(type="radio" name="like")
+							+e.inner
+								+icon("thumbs-up")
+						
+						+b.LABEL.btn-like--in()
+							input(type="radio" name="like")
+							+e.inner
+								+icon("thumbs-down")
+						
+					+input('',"textarea")
+					.row
+						.col.mb-4
+							+add-file(n)
+						.col-auto.mb-4
+							a.tdu(href="#") Правила размещения отзывов на сайте plan1.ru
+					+e.btn(type="button") Отправить отзыв
+						
+	// end s-company-block
