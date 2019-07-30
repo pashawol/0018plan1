@@ -111,7 +111,7 @@ mixin pic(bg, i,lazy, exp="jpg", media='576px')
 		-const data = (ifLazy ?  url  : null)
 
 		if source
-			source( srcset=src data-srcset= data  type=`image/${exp}`   )&attributes(attributes)
+			source( srcset=url    type=`image/${exp}`   )&attributes(attributes)
 		else
 			img(src=src data-src=data, class=(bg=="bg" ? "object-fit-js": null ) alt="")&attributes(attributes)
 	

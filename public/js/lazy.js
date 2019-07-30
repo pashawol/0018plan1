@@ -76,13 +76,13 @@ document.addEventListener('DOMContentLoaded', function() {
 			// lazyImage.src = lazyImage.dataset.src;
 			// lazyImage.srcset = lazyImage.dataset.srcset;
 			
-			if (lazyImage.tagName == 'IMG' ) { 
-				lazyImage.src = lazyImage.dataset.src;
-			}
-			if (lazyImage.tagName == 'SOURCE' ) {
+			lazyImage.src = lazyImage.dataset.src;
+			// if (lazyImage.tagName == 'IMG' ) { 
+			// }
+			// if (lazyImage.tagName == 'SOURCE' ) {
 				
-				lazyImage.srcset = lazyImage.dataset.srcset;
-			}
+			// 	lazyImage.srcset = lazyImage.dataset.srcset;
+			// }
 		});
 		lazyBackgrounds.forEach(function(lazyBackground) {
 			lazyBackground.classList.add('visible');
