@@ -2,7 +2,7 @@ function LazyFunction(){
 
 
 document.addEventListener("DOMContentLoaded", function () {
-	var lazyImages = [].slice.call(document.querySelectorAll("picture.lazy img, picture.lazy source, img.lazy"));
+	var lazyImages = [].slice.call(document.querySelectorAll("picture.lazy img,  img.lazy"));
 	var active = false;
 
 	const lazyLoad = function () {
@@ -16,10 +16,10 @@ document.addEventListener("DOMContentLoaded", function () {
 						if (lazyImage.tagName == 'IMG' ) { 
 							lazyImage.src = lazyImage.dataset.src;
 						}
-						if (lazyImage.tagName == 'SOURCE' ) {
+						// if (lazyImage.tagName == 'SOURCE' ) {
 							
-							lazyImage.srcset = lazyImage.dataset.srcset;
-						}
+						// 	lazyImage.srcset = lazyImage.dataset.srcset;
+						// }
 						// lazyImage.src = lazyImage.dataset.src;
 						// lazyImage.srcset = lazyImage.dataset.srcset;
 						lazyImage.classList.remove("lazy");

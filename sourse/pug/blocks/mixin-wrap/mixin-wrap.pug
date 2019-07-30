@@ -111,7 +111,7 @@ mixin pic(bg, i,lazy, exp="jpg", media='576px')
 		-const data = (ifLazy ?  url  : null)
 
 		if source
-			source( srcset=src data-srcset= data  type=`image/${exp}`   )&attributes(attributes)
+			source( srcset=url  type=`image/${exp}`   )&attributes(attributes)
 		else
 			img(src=src data-src=data, class=(bg=="bg" ? "object-fit-js": null ) alt="")&attributes(attributes)
 	
@@ -139,7 +139,7 @@ mixin search-form()
 mixin card()
 	+b.card-item
 		+e.img-wrap(href="#")
-			+pic("bg",'org',"",'jpg',0)
+			+pic("bg",'org',"lazy",'jpg',0)
 		.h6.ttu IMPREZA
 		+e.text.small Ресторан. Русская и европейская кухня. Бильярд. Проведение банкетов, свадеб, корпоративов. Элегантный интерьер, демократичные цены
 		+e.foot

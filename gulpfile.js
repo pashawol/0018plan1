@@ -2,7 +2,7 @@
 
 'use strict'; 
 
-var fontgen = require('../gulp-fontgen');
+ 
 
 global.$ = {
 	gulp: require('gulp'),  
@@ -21,12 +21,7 @@ $.path.tasks.forEach(function (taskPath){
 		require(taskPath)();
 	});
  
-	$.gulp.task('fontgen', function() {
-		return $.gulp.src("./source/fonts/*.{ttf,otf.woff}")
-			.pipe(fontgen({
-				dest: "./public/fonts/"
-			}));
-	});
+
 
 $.gulp.task('img', $.gulp.series('cleanimg','img-responsive'));
 		 
