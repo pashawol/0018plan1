@@ -7,8 +7,8 @@
 // delete window.IntersectionObserver; // Fallback Testing
 
 document.addEventListener('DOMContentLoaded', function() {
-
-	var lazyImages = [].slice.call(document.querySelectorAll("picture.lazy img, picture.lazy source, img.lazy"));
+	// , picture.lazy source
+	var lazyImages = [].slice.call(document.querySelectorAll("picture.lazy img, img.lazy"));
 	var lazyBackgrounds = [].slice.call(document.querySelectorAll('.lazy-background'));
 	var lazyBackgroundsData = [].slice.call(document.querySelectorAll('[data-bg]'));
 
