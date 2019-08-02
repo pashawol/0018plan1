@@ -120,7 +120,7 @@ mixin pic(bg, i,lazy, exp="jpg", media='576px')
 		if media !== 0  
 			each val in ["webp",exp] 
 				each val2 in [smpath2,smpath1] 
-					+src(i,val,`${val2 + "/webp" || "" }`,lazy,"source")(media=(val2 == smpath2 ? "(min-width:"+ media+")" : null))
+					+src(i,val,`${val2 + (val ==  "webp" ? "/webp" : "") }`,lazy,"source")(media=(val2 == smpath2 ? "(min-width:"+ media+")" : null))
 		else 
 			+src(i,'webp',smpath2+`/webp`,lazy,"source")
 			// /webp images  
